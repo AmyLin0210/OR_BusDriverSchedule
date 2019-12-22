@@ -1,0 +1,62 @@
+html {
+    font-size: 16px;
+}
+
+.header {
+    /* layout */
+    display: block;
+
+    /* position */
+    width: 100%;
+    height: 7rem;
+
+    /* skin */
+    background-image: url("../images/header.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+    background-color: white;
+}
+
+.navigation {
+    /* layout */
+    display: flex;
+
+    /* position */
+    width: 100%;
+    height: 3rem;
+    align-content: center;
+    justify-content: center;
+
+    /* skin */
+    background-color: rgba(51, 102, 0, 1);
+    box-sizing: border-box;
+}
+
+.navigation__item {
+    /* layout */
+    display: flex;
+
+    /* position */
+    width: 15rem;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+    margin-bottom: 0;
+
+    /* skin */
+    background-color: rgba(51, 102, 0, 1);
+    font-size: 1rem;
+    font-family: sans-serif;
+    text-align: center;
+    color: white;
+    box-sizing: border-box;
+}
+
+.navigation__item:hover {
+    /* skin */
+    background-color: rgba(133, 224, 133, .7);
+    color: rgb(10, 41, 10);
+    cursor: pointer;
+}

@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %} 
+    路線排班
+{% endblock %}
+{% block css %}
+    <link rel="stylesheet" type="text/css" href="{% static "css/route_schedule.css" %}">
+{% endblock %}
+{% block content%}
+<section class="main__route">
+    <section class="route__list">
+        <h1 class="list__title">日期</h1>
+        <input type="text" name="route-date" class="list__date" placeholder="yyyy-mm-dd" value="{{schedule_date}}" id="schedule_date"/>
+        <h1 class="list__title">路線選擇</h1>
+        <section class="list__route-name">
+        {% for route in route_info %}
+            <button class="route-name__item" id="route_{{route.id}}" route_id="{{route.id}}">{{route.name}}</button>
+        {% endfor %}
+        </section>
+    </section>
+    <section class="route__info">
+    {% for route in route_item %}
+        <section class="info__table">
+            <h1 class="table__title">{{route.item_name}}</h1>
+            <article class="table__note">{{route.item_note}}</article>
+            <section class="table__stop-name">
+            {% for stop in route.schedule.title %}
+                <p class="stop-name__item">{{stop}}</p>
+            {% endfor %}
+                <p class="stop-name__note">備註</p>
+                <p class="stop-name__note">負責司機</p>
+            </section>
+            {% for stop_time in route.schedule.content %}
+                <section class="table__stop-time">
+                    {% for item in stop_time.arrive_time %}
+                        <p class="stop-time__item">{{item}}</p>
+                    {% endfor %}
+                    <p class="stop-time__note">{{stop_time.schedule_note}}</p> 
+                    <p class="stop-time__note">{{stop_time.driver}}</p>  
+                </section>
+            {% endfor %}          
+        </section>
+    {% endfor %}    
+    </section>
+</section>
+{% endblock %}
+{% block js %}
+    <script type="text/javascript" src="{% static "js/route_schedule.js" %}"></script>
+{% endblock %}

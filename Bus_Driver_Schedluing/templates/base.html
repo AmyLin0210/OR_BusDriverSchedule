@@ -1,0 +1,23 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>{% block title %} {% endblock %}</title>
+    <link rel="stylesheet" type="text/css" href="{% static "css/initialize.css" %}">
+    <link rel="stylesheet" type="text/css" href="{% static "css/base.css" %}">
+    {% block css %} {% endblock %}
+  </head>
+  <body>
+    <header class = "header"></header>
+    <nav class = "navigation">
+        <p class = "navigation__item navigation__item--route">路線班表</p>
+        <p class = "navigation__item navigation__item--driver">司機班表</p>
+    </nav>
+    <main>
+  	    {% block content %}
+        {% endblock %}
+    </main>
+    {% block js %} {% endblock %}
+  </body>
+</html>

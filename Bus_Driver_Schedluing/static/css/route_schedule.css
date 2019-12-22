@@ -1,0 +1,215 @@
+.main__route {
+    /* layout */
+    display: block;
+
+    /* position */
+    width: 100%;
+}
+
+.route__list {
+    /* layout */
+    display: block;
+    align-self: center;
+
+    /* position */
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    width: 70%;
+}
+
+.route__list > .list__title {
+    /* layout */
+    display: block;
+
+    /* position */
+    width: 15rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+
+    /* skin */
+    font-size: 1.2rem;
+    text-align: center;
+    border: 2px rgba(77, 153, 0, 1) solid;
+    border-radius: 5px;
+    background-color: rgba(204, 255, 204, .7);
+}
+
+.route__list > .list__date {
+    /* layout */
+    display: flex;
+    justify-content: center;
+
+    /* position */
+    width: 10rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 5px;
+
+    /* skin */
+    font-size: 1rem;
+    text-align: center;
+    border: 1.5px rgba(109, 133, 133, 1) solid;
+    border-radius: 5px;
+}
+
+.route__list > .list__route-name {
+    /* layout */
+    display: flex;
+    justify-content: center;
+
+    /* position */
+    width: 100%;
+    padding: 5px;
+}
+
+.route__list > .list__route-name > .route-name__item {
+    /* layout */
+    display: block;
+    align-self: center;
+    justify-self: center;
+
+    /* position */
+    width: 10rem;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+    /* skin */
+    font-size: 1rem;
+    text-align: center;
+    border: 1px rgba(109, 133, 133, 1) solid;
+    border-radius: 2px;
+}
+
+.route__list > .list__route-name > .route-name__item:hover {
+    /* skin */
+    background-color: rgba(204, 255, 204, .7);
+    cursor: pointer;
+}
+
+.route__info {
+    /* layout */
+    display: block;
+    
+    /* position */
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.route__info > .info__table {
+    /* layout */
+    display: block;
+
+    /* position */
+    width: 100%;
+}
+
+.route__info > .info__table > .table__title{
+    /* layout */
+    display: block;
+
+    /* position */
+    width: 70%;
+    margin-top: 10px;
+
+    /* skin */
+    padding: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.route__info > .info__table > .table__note{
+    /* layout */
+    display: block;
+
+    /* position */
+    width: 70%;
+
+    /* skin */
+    padding: 5px;
+}
+
+.route__info > .info__table > .table__stop-name {
+    /* layout */
+    display: flex;
+    justify-content: center;
+
+    /* position */
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+}
+
+.route__info > .info__table > .table__stop-name > .stop-name__item {
+    /* layout */
+    display: inline-block;
+
+    /* position */
+    width: 10rem;
+
+    /* skin */
+    font-size: 1rem;
+    padding: 5px;
+    text-align: center;
+    border: 1px  rgb(37, 116, 77) solid;
+    background-color: rgba(204, 255, 204, .7);
+}
+
+.route__info > .info__table > .table__stop-name > .stop-name__note {
+    /* layout */
+    display: inline-block;
+
+    /* position */
+    width: 10rem;
+
+    /* skin */
+    font-size: 1rem;
+    padding: 5px;
+    text-align: center;
+    border: 1px  rgb(37, 116, 77) solid;
+    background-color: rgba(204, 255, 204, .7);
+}
+
+.route__info > .info__table > .table__stop-time{
+    /* layout */
+    display: flex;
+    justify-content: center;
+
+    /* position */
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.route__info > .info__table > .table__stop-time > .stop-time__item {
+    /* layout */
+    display: inline-block;
+
+    /* position */
+    width: 10rem;
+
+    /* skin */
+    font-size: 1rem;
+    padding: 5px;
+    text-align: center;
+    border: 1px  rgb(37, 116, 77) solid;
+}
+
+.route__info > .info__table > .table__stop-time > .stop-time__note {
+    /* layout */
+    display: inline-block;
+
+    /* position */
+    width: 10rem;
+
+    /* skin */
+    font-size: 1rem;
+    padding: 5px;
+    text-align: center;
+    border: 1px  rgb(37, 116, 77) solid;
+}

@@ -1,0 +1,7 @@
+{% extends "base.html" %}
+{% block title %} My store {% endblock %}
+{% block content%}
+{% for route in route_data %}
+  <p>{{route.route_id}}</p>
+{% endfor %}
+{% endblock %}
