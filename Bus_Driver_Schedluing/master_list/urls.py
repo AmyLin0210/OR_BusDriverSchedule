@@ -20,5 +20,5 @@ from . import views
 
 urlpatterns = [
     path('', views.showtemplate, name = "master_list_index"),
-    path('<str:date>/<int:route_id>', views.showtemplate, name = "master_list_date"),
+    path('<str:week>/<int:route_id>', views.showtemplate, name = "master_list_date"),
 ]

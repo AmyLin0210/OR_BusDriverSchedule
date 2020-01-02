@@ -9,8 +9,8 @@
 {% block content%}
 <section class="main__route">
     <section class="route__list">
-        <h1 class="list__title">日期</h1>
-        <input type="text" name="route-date" class="list__date" placeholder="yyyy-mm-dd" value="{{schedule_date}}" id="schedule_date"/>
+        <h1 class="list__title">星期</h1>
+        <input type="text" name="route-date" class="list__date" placeholder="ex. 星期一 : 1" value="{{schedule_date}}" id="schedule_date"/>
         <h1 class="list__title">路線選擇</h1>
         <section class="list__route-name">
         {% for route in route_info %}

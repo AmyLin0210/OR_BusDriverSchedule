@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %} 
+    路線排班
+{% endblock %}
+{% block css %}
+    <link rel="stylesheet" type="text/css" href="{% static "css/driver_schedule.css" %}">
+{% endblock %}
+{% block content%}
+<section class="main__driver">
+    <section class="driver__time-select">
+        <section class="time-select__time">
+            <h1 class="time__title">星期</h1>
+            <input type="text" name="schedule_week" class="time__date" placeholder="ex. 星期一 : 1" value="{{week}}" id="schedule_week"/>
+        </section>    
+    </section>    
+    <section class="driver__driver-select">
+        <h1 class="driver-select__title driver-select__title--name" id="driver-name_title">司機名稱</h1>
+        <section class="driver-select__driver-name driver-select__driver-name--hidden" id="driver-name_item">
+        {% for driver in driver_info %}
+            <button class="driver-name__item" id="route_{{driver.id}}" driver_id="{{driver.id}}">{{driver.name}}</button>
+        {% endfor %}
+        </section>
+    </section>
+    <section class="driver__schedule">
+        <h1 class="schedule__driver-name">{{driver_name}}</h1>
+        <section class="schedule__title">
+            <h2 class="title__item title__name">路線</h2>
+            <h2 class="title__item title__id">班次編號</h2>
+            <h2 class="title__item">開車站牌</h2>
+            <h2 class="title__item">開車時間</h2>
+        </section>
+        <section class="schedule__content">
+        {% for route in route_info %}
+            <section class="content__detail">
+                <p class="detail__item detail__name">{{route.route_item_name}}</p>
+                <p class="detail__item detail__id">{{route.route_detail_id}}</p>
+                <p class="detail__item">{{route.stop}}</p>
+                <p class="detail__item">{{route.arrive_time}}</p>
+            </section>
+        {% endfor %}
+        </section>
+    </section>
+</section>
+{% endblock %}
+{% block js %}
+    <script type="text/javascript" src="{% static "js/driver_schedule.js" %}"></script>
+{% endblock %}

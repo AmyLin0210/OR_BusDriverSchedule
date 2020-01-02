@@ -60,3 +60,8 @@ html {
     color: rgb(10, 41, 10);
     cursor: pointer;
 }
+
+.footer {
+    /* position */
+    height: 10vh;
+}

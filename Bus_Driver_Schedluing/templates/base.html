@@ -11,13 +11,14 @@
   <body>
     <header class = "header"></header>
     <nav class = "navigation">
-        <p class = "navigation__item navigation__item--route">路線班表</p>
-        <p class = "navigation__item navigation__item--driver">司機班表</p>
+        <a class = "navigation__item navigation__item--route" href="http://localhost:8000/master_list/{{week}}/0">路線班表</a>
+        <a class = "navigation__item navigation__item--driver" href="http://localhost:8000/driver_schedule/{{week}}/21">司機班表</a>
     </nav>
     <main>
   	    {% block content %}
         {% endblock %}
     </main>
+    <footer class="footer"></footer>
     {% block js %} {% endblock %}
   </body>
 </html>

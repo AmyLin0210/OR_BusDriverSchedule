@@ -5,12 +5,12 @@
             "bus_driver_id": 21,
             "bus_driver_schedule": [
                 {
-                    "route_id": 0,
+                    "route_id": 3,
                     "route_item_id": 0,
                     "route_detail_id": 0
                 },
                 {
-                    "route_id": 0,
+                    "route_id": 3,
                     "route_item_id": 1,
                     "route_detail_id": 0
                 }
@@ -20,16 +20,16 @@
             "bus_driver_id": 23,
             "bus_driver_schedule": [
                 {
-                    "route_id": 0,
+                    "route_id": 3,
                     "route_item_id": 0,
                     "route_detail_id": 1
                 },
                 {
-                    "route_id": 0,
+                    "route_id": 3,
                     "route_item_id": 1,
                     "route_detail_id": 1
                 }
             ]    
         }
     ]
-},
+}

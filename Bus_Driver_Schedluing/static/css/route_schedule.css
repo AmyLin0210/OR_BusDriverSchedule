@@ -60,6 +60,7 @@
     /* layout */
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 
     /* position */
     width: 100%;
@@ -73,7 +74,7 @@
     justify-self: center;
 
     /* position */
-    width: 10rem;
+    width: 7rem;
     padding-top: 5px;
     padding-bottom: 5px;
 
