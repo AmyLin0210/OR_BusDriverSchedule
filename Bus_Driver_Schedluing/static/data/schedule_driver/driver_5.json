@@ -1,5 +1,5 @@
 {
-    "date": "6",
+    "date": "5",
     "schedule": [
         {
             "bus_driver_id": 0,
@@ -970,9 +970,14 @@
                     "route_detail_id": 22
                 },
                 {
-                    "route_id": 15,
+                    "route_id": 7,
+                    "route_item_id": 0,
+                    "route_detail_id": 14
+                },
+                {
+                    "route_id": 7,
                     "route_item_id": 1,
-                    "route_detail_id": 19
+                    "route_detail_id": 14
                 }
             ]
         },
@@ -1175,14 +1180,9 @@
                     "route_detail_id": 29
                 },
                 {
-                    "route_id": 7,
-                    "route_item_id": 0,
-                    "route_detail_id": 15
-                },
-                {
-                    "route_id": 7,
+                    "route_id": 15,
                     "route_item_id": 1,
-                    "route_detail_id": 15
+                    "route_detail_id": 20
                 },
                 {
                     "route_id": 1,
@@ -1285,19 +1285,9 @@
                     "route_detail_id": 11
                 },
                 {
-                    "route_id": 7,
-                    "route_item_id": 1,
-                    "route_detail_id": 14
-                },
-                {
-                    "route_id": 7,
+                    "route_id": 0,
                     "route_item_id": 0,
-                    "route_detail_id": 16
-                },
-                {
-                    "route_id": 7,
-                    "route_item_id": 1,
-                    "route_detail_id": 16
+                    "route_detail_id": 26
                 }
             ]
         },
@@ -1330,9 +1320,9 @@
                     "route_detail_id": 22
                 },
                 {
-                    "route_id": 0,
+                    "route_id": 11,
                     "route_item_id": 0,
-                    "route_detail_id": 26
+                    "route_detail_id": 19
                 }
             ]
         },
@@ -1366,8 +1356,8 @@
                 },
                 {
                     "route_id": 15,
-                    "route_item_id": 1,
-                    "route_detail_id": 20
+                    "route_item_id": 0,
+                    "route_detail_id": 19
                 }
             ]
         },
@@ -1395,14 +1385,9 @@
                     "route_detail_id": 26
                 },
                 {
-                    "route_id": 7,
+                    "route_id": 11,
                     "route_item_id": 0,
-                    "route_detail_id": 14
-                },
-                {
-                    "route_id": 7,
-                    "route_item_id": 1,
-                    "route_detail_id": 13
+                    "route_detail_id": 18
                 }
             ]
         },
@@ -1430,14 +1415,42 @@
                     "route_detail_id": 17
                 },
                 {
-                    "route_id": 11,
+                    "route_id": 15,
                     "route_item_id": 0,
-                    "route_detail_id": 18
+                    "route_detail_id": 17
                 }
             ]
         },
         {
             "bus_driver_id": 30,
+            "bus_driver_schedule": []
+        },
+        {
+            "bus_driver_id": 31,
+            "bus_driver_schedule": []
+        },
+        {
+            "bus_driver_id": 32,
+            "bus_driver_schedule": []
+        },
+        {
+            "bus_driver_id": 33,
+            "bus_driver_schedule": []
+        },
+        {
+            "bus_driver_id": 34,
+            "bus_driver_schedule": []
+        },
+        {
+            "bus_driver_id": 35,
+            "bus_driver_schedule": []
+        },
+        {
+            "bus_driver_id": 36,
+            "bus_driver_schedule": []
+        },
+        {
+            "bus_driver_id": 37,
             "bus_driver_schedule": [
                 {
                     "route_id": 19,
@@ -1450,14 +1463,24 @@
                     "route_detail_id": 21
                 },
                 {
-                    "route_id": 15,
+                    "route_id": 19,
                     "route_item_id": 0,
-                    "route_detail_id": 17
+                    "route_detail_id": 30
+                },
+                {
+                    "route_id": 7,
+                    "route_item_id": 0,
+                    "route_detail_id": 15
+                },
+                {
+                    "route_id": 7,
+                    "route_item_id": 1,
+                    "route_detail_id": 15
                 }
             ]
         },
         {
-            "bus_driver_id": 31,
+            "bus_driver_id": 38,
             "bus_driver_schedule": [
                 {
                     "route_id": 20,
@@ -1470,19 +1493,19 @@
                     "route_detail_id": 17
                 },
                 {
-                    "route_id": 19,
-                    "route_item_id": 0,
-                    "route_detail_id": 30
+                    "route_id": 7,
+                    "route_item_id": 1,
+                    "route_detail_id": 13
                 },
                 {
-                    "route_id": 11,
+                    "route_id": 0,
                     "route_item_id": 0,
-                    "route_detail_id": 19
+                    "route_detail_id": 27
                 }
             ]
         },
         {
-            "bus_driver_id": 32,
+            "bus_driver_id": 39,
             "bus_driver_schedule": [
                 {
                     "route_id": 15,
@@ -1491,13 +1514,18 @@
                 },
                 {
                     "route_id": 15,
-                    "route_item_id": 0,
+                    "route_item_id": 1,
                     "route_detail_id": 19
+                },
+                {
+                    "route_id": 1,
+                    "route_item_id": 0,
+                    "route_detail_id": 27
                 }
             ]
         },
         {
-            "bus_driver_id": 33,
+            "bus_driver_id": 40,
             "bus_driver_schedule": [
                 {
                     "route_id": 20,
@@ -1508,16 +1536,11 @@
                     "route_id": 22,
                     "route_item_id": 0,
                     "route_detail_id": 10
-                },
-                {
-                    "route_id": 0,
-                    "route_item_id": 0,
-                    "route_detail_id": 27
                 }
             ]
         },
         {
-            "bus_driver_id": 34,
+            "bus_driver_id": 41,
             "bus_driver_schedule": [
                 {
                     "route_id": 19,
@@ -1528,16 +1551,11 @@
                     "route_id": 11,
                     "route_item_id": 1,
                     "route_detail_id": 17
-                },
-                {
-                    "route_id": 1,
-                    "route_item_id": 0,
-                    "route_detail_id": 27
                 }
             ]
         },
         {
-            "bus_driver_id": 35,
+            "bus_driver_id": 42,
             "bus_driver_schedule": [
                 {
                     "route_id": 19,
@@ -1552,7 +1570,7 @@
             ]
         },
         {
-            "bus_driver_id": 36,
+            "bus_driver_id": 43,
             "bus_driver_schedule": [
                 {
                     "route_id": 20,
@@ -1567,7 +1585,7 @@
             ]
         },
         {
-            "bus_driver_id": 37,
+            "bus_driver_id": 44,
             "bus_driver_schedule": [
                 {
                     "route_id": 22,
@@ -1575,34 +1593,6 @@
                     "route_detail_id": 9
                 }
             ]
-        },
-        {
-            "bus_driver_id": 38,
-            "bus_driver_schedule": []
-        },
-        {
-            "bus_driver_id": 39,
-            "bus_driver_schedule": []
-        },
-        {
-            "bus_driver_id": 40,
-            "bus_driver_schedule": []
-        },
-        {
-            "bus_driver_id": 41,
-            "bus_driver_schedule": []
-        },
-        {
-            "bus_driver_id": 42,
-            "bus_driver_schedule": []
-        },
-        {
-            "bus_driver_id": 43,
-            "bus_driver_schedule": []
-        },
-        {
-            "bus_driver_id": 44,
-            "bus_driver_schedule": []
         },
         {
             "bus_driver_id": 45,
@@ -3260,6 +3250,26 @@
         },
         {
             "bus_driver_id": 95,
+            "bus_driver_schedule": []
+        },
+        {
+            "bus_driver_id": 96,
+            "bus_driver_schedule": []
+        },
+        {
+            "bus_driver_id": 97,
+            "bus_driver_schedule": []
+        },
+        {
+            "bus_driver_id": 98,
+            "bus_driver_schedule": []
+        },
+        {
+            "bus_driver_id": 99,
+            "bus_driver_schedule": []
+        },
+        {
+            "bus_driver_id": 100,
             "bus_driver_schedule": [
                 {
                     "route_id": 3,
@@ -3279,7 +3289,7 @@
             ]
         },
         {
-            "bus_driver_id": 96,
+            "bus_driver_id": 101,
             "bus_driver_schedule": [
                 {
                     "route_id": 17,
@@ -3294,7 +3304,7 @@
             ]
         },
         {
-            "bus_driver_id": 97,
+            "bus_driver_id": 102,
             "bus_driver_schedule": [
                 {
                     "route_id": 18,
@@ -3304,7 +3314,7 @@
             ]
         },
         {
-            "bus_driver_id": 98,
+            "bus_driver_id": 103,
             "bus_driver_schedule": [
                 {
                     "route_id": 3,
@@ -3322,26 +3332,6 @@
                     "route_detail_id": 5
                 }
             ]
-        },
-        {
-            "bus_driver_id": 99,
-            "bus_driver_schedule": []
-        },
-        {
-            "bus_driver_id": 100,
-            "bus_driver_schedule": []
-        },
-        {
-            "bus_driver_id": 101,
-            "bus_driver_schedule": []
-        },
-        {
-            "bus_driver_id": 102,
-            "bus_driver_schedule": []
-        },
-        {
-            "bus_driver_id": 103,
-            "bus_driver_schedule": []
         },
         {
             "bus_driver_id": 104,
@@ -5105,6 +5095,10 @@
         },
         {
             "bus_driver_id": 165,
+            "bus_driver_schedule": []
+        },
+        {
+            "bus_driver_id": 166,
             "bus_driver_schedule": [
                 {
                     "route_id": 21,
@@ -5112,10 +5106,6 @@
                     "route_detail_id": 4
                 }
             ]
-        },
-        {
-            "bus_driver_id": 166,
-            "bus_driver_schedule": []
         },
         {
             "bus_driver_id": 167,

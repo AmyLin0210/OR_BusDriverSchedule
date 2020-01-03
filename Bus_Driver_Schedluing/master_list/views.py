@@ -10,7 +10,8 @@ def index(request):
 
 # Create your views here.
 def showtemplate(request, route_id=0, week= "7"):
-
+    week = str(int(week) - 1)
+    print(settings.BASE_DIR + '/static/data/routes/route_' + week + '.json')
     route_data = pd.read_json(path_or_buf = settings.BASE_DIR + '/static/data/routes/route_' + week + '.json', typ='series')
 
     route_schedule = pd.read_json(path_or_buf = settings.BASE_DIR + '/static/data/schedule_route/route_' + week + '.json', typ='series')
@@ -24,8 +25,6 @@ def showtemplate(request, route_id=0, week= "7"):
 
     driver_data = pd.read_json(path_or_buf = settings.BASE_DIR + '/static/data/driver.json', typ='series')
 
-
-    print(schedule_info)
     for i, item in enumerate(route_item):
         for j, detail in enumerate(item["schedule"]["content"]):
             if str(item["route_item_id"]) in schedule_info and str(detail["route_detail_id"]) in schedule_info[str(item["route_item_id"])]:
@@ -45,5 +44,5 @@ def showtemplate(request, route_id=0, week= "7"):
         "schedule_info": schedule_info,
         "driver_info": driver_data,
         "schedule_date": week,
-        "week": week
+        "week": str(int(week) + 1)
     })

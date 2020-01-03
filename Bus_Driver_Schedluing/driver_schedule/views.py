@@ -16,6 +16,14 @@ def getRouteInfo(route_data, route_id, route_item_id, route_detail_id):
     route_item = [item for item in route[0]["route_item"] if item["route_item_id"] == route_item_id]
     route_info["route_item_name"] = route_item[0]["item_name"]
 
+    if route_detail_id == -1:
+        return {
+            "route_detail_id": -1,
+            "route_item_name": route_item[0]["item_name"],
+            "arrive_time": "",
+            "stop": "",
+        }
+
     route_detail = [item for item in route_item[0]["schedule"]["content"] if item["route_detail_id"] == route_detail_id]
     route_arrive_time = route_detail[0]["arrive_time"]
     for i in range(len(route_arrive_time)):
@@ -28,8 +36,8 @@ def getRouteInfo(route_data, route_id, route_item_id, route_detail_id):
                     
 
 # Create your views here.
-def showtemplate(request, driver_id=21, week = "7", date_from= "2019-12-19", date_to= "2019-12-19"):
-
+def showtemplate(request, driver_id=6, week = "7", date_from= "2019-12-19", date_to= "2019-12-19"):
+    week = str(int(week) - 1)
     driver_data = pd.read_json(path_or_buf = settings.BASE_DIR + '/static/data/driver.json', typ='series')
     driver_info = []
     for i, name in driver_data.items():
@@ -55,7 +63,7 @@ def showtemplate(request, driver_id=21, week = "7", date_from= "2019-12-19", dat
         "driver_id":   driver_id,
         "driver_name": driver_data[driver_id],
         "driver_info": driver_info,
-        "week":        week,
+        "week":        str(int(week) + 1),
         "driver_schedule": driver_schedule_info,
         "route_info":   route_info
     })
